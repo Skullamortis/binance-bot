@@ -13,7 +13,7 @@ Python 3.9.1
 
 ## Guia para instalacao das bibliotecas no Windows
 
- - **pip install pandas numpy websocketclient json**
+ - **pip install pandas numpy websocketclient json matplotlib mplfinance**
 
 O Tensorflow é possivel ser instalado pela ferramenta pip ou baixar no site.
 
