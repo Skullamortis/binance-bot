@@ -1,12 +1,25 @@
 ## Readme
 
-## Conteudo:
+Python 3.9.1
 
- - candle5m.csv (todas candles de 5 minutos ja formatadas para uso. Possivel abrir no Excel)
- - data5m.txt (Dado cru das candles recebidas pela Binance, em json)
+## Conteúdo:
+
+ - candle5m.csv (todas candles de 5 minutos já formatadas para uso. Possivel abrir no Excel)
+ - data5m.txt (Dado cru dos candles recebidas pela Binance, em json)
  - growing.py (Teste de "interface", com candles moveis)
  - main.py (Conecta na Binance e baixa os dados no arquivo data5m.txt)
- - parser.py (Formata os dados do arquivo data5m.py)
- - websocketsFUT.py (Conecta e baixa os dados de 5m minutos no "indice futuro")
+ - parser.py (Formata os dados do arquivo data5m.py -> candle5m.csv)
+ - websocketsFUT.py (Conecta e baixa os dados de 5m minutos do "indice futuro")
 
+## Guia para instalacao das bibliotecas no Windows
+
+ - **pip install pandas numpy websocketclient json**
+
+O Tensorflow é possivel ser instalado pela ferramenta pip ou baixar no site.
+
+## TODO
+
+ - Recomendacoes de referencias (livros, links, etc)
+ - o proprio **TODO**
+ 
 
