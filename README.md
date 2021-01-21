@@ -10,6 +10,7 @@ Python 3.9.1
  - main.py (Conecta na Binance e baixa os dados no arquivo data5m.txt)
  - parser.py (Formata os dados do arquivo data5m.py -> candle5m.csv)
  - websocketsFUT.py (Conecta e baixa os dados de 5m minutos do "indice futuro")
+ - obv.py (Calculo do indicador OBV, de acordo com [Investopedia](https://www.investopedia.com/terms/o/onbalancevolume.asp)
 
 ## Guia para instalacao das bibliotecas no Windows
 
