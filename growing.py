@@ -32,11 +32,9 @@ import mplfinance as mpf
 import matplotlib.animation as animation
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import mplcyberpunk
 
 ## Class to simulate getting more data from API:
 mpl.rcParams['toolbar'] = 'None'
-mpl.style.use('cyberpunk')
 
 #Themes
 mc = mpf.make_marketcolors(up='#00ff04',down='#7700ff',edge='#505050',wick='#505050',volume='silver',inherit=True)
@@ -91,8 +89,6 @@ def animate(ival):
     rs = df.resample(resample_period).agg(resample_map).dropna()
     ax.clear()
     mpf.plot(rs,ax=ax,type='candle')
-    mplcyberpunk.add_glow_effects()
-    mplcyberpunk.make_lines_glow(ax)
 
 ani = animation.FuncAnimation(fig, animate, interval=1)
 
