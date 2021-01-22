@@ -18,8 +18,11 @@
 
  - Para rodar o python pelo CMD ou preferivelmente, pelo PowerShell, é necessário marcar na tela inicial de instalação "Add Python 3.9 to PATH"
  - Bibliotecas: **pip install pandas numpy websocketclient matplotlib mplfinance**
+ - **Ferramentas recomendadas:**
+ 	- Editores: SublimeText, Pycharm
+	- Powershell
 
-O Tensorflow é possivel ser instalado pela ferramenta pip ou baixar no site.
+O Tensorflow é possivel ser instalado pela ferramenta pip ou baixar no [site](https://www.tensorflow.org/install).
 
 ## TODO
 
