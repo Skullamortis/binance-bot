@@ -1,8 +1,8 @@
 ## Readme
 
-Python 3.9.1
-Tensorflow 2.4
-Git 2.30
+ - Python 3.9.1
+ - Tensorflow 2.4
+ - Git 2.30
 
 ## Conteúdo:
 
