@@ -13,7 +13,7 @@
  - parser.py (formata os dados do arquivo data5m.txt -> candle5m.csv)
  - websocketsFUT.py (conecta e baixa os dados de 5 minutos do "índice futuro")
  - obv.py (cálculo do indicador OBV, de acordo com [Investopedia](https://www.investopedia.com/terms/o/onbalancevolume.asp))
-
+	- Precisa ser corrigido o porque pula algumas candles.
 ## Guia para instalação das bibliotecas no Windows
 
  - Para rodar o python pelo CMD ou preferivelmente, pelo PowerShell, é necessário marcar na tela inicial de instalação "Add Python 3.9 to PATH"
