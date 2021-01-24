@@ -9,6 +9,8 @@ obv_init = 0
 close_init = data['close'].values[0]
 index_next = pd.Timestamp(data.index[0])
 obv = 0
+close_value = data['close'].values[0]
+volume_value = data['volume'].values[0]
 iterator = data.iterrows()
 candles = 0
 print (obv)
@@ -16,17 +18,10 @@ print (obv)
 
 for index, row in iterator:
     
-    try:
-        index_next = next(iterator)
-        index_next = index_next[0]
-    except:
-        print ("End of file")
-        print ("Total candles:", candles)
-
     if index != index_next:
     
         close_value = row['close']
-        volume_value = row['volume']
+
     
         if close_init > close_value:
             obv = obv_init - volume_value
@@ -38,13 +33,12 @@ for index, row in iterator:
             obv = 0
         
         print ("Candle Date:", index, "OBV:",obv, "Close_init:", close_init, "Close:", close_value, "Volume:", volume_value)
-#        print ("Next date:", index_next)
-        #print (index_next)
         candles = candles + 1
         obv_init = obv
-        close_init = close_value 
-
     
+    volume_value = row['volume']
+    close_init = close_value 
+    index_next = index        
 
     
 
