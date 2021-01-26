@@ -9,8 +9,8 @@
  - candle5m.csv (todas candles de 5 minutos já formatadas para uso. Possível abrir no Excel)
  - data5m.txt (dado cru dos candles recebidas pela Binance, em json)
  - growing.py (teste de "interface", com candles móveis)
- - main.py (conecta na Binance e baixa os dados no arquivo data5m.txt)
- - parser.py (formata os dados do arquivo data5m.txt -> candle5m.csv)
+ - main.py (conecta na Binance e da dump dos dados)
+ - parser.py (formata os dados do arquivo Usage: **python parser.py dados.txt output.csv**)
  - websocketsFUT.py (conecta e baixa os dados de 5 minutos do "índice futuro")
  - obv.py (cálculo do indicador OBV, de acordo com [Investopedia](https://www.investopedia.com/terms/o/onbalancevolume.asp))
 
