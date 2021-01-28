@@ -36,9 +36,6 @@ for index, row in iterator:
         elif close_init < close_value:
             obv = obv_init + volume_value
     
-        else:
-            obv = 0
-        
         print ("Candle Date:", index, "OBV:",obv, "Close_init:", close_init, "Close:", close_value, "Volume:", volume_value)
         obv_init = obv
         candles = candles + 1
