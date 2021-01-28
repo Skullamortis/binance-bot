@@ -13,6 +13,7 @@
  - parser.py (formata os dados do arquivo Usage: **python parser.py dados.txt output.csv**)
  - websocketsFUT.py (conecta e baixa os dados de 5 minutos do "índice futuro")
  - obv.py (cálculo do indicador OBV, de acordo com [Investopedia](https://www.investopedia.com/terms/o/onbalancevolume.asp))
+ - obv_to_csv.py (calculo do obv e salva em tabela com candles fechadas)
 
 ## Guia para instalação das bibliotecas no Windows
 
