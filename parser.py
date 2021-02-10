@@ -24,7 +24,9 @@ for i in tqdm(range(numbers)):
     low =  data[i]['data']['k']['l']
     close = data[i]['data']['k']['c']
     volume = data[i]['data']['k']['v']
-    df = df.append({"date":date,"open":sopen,"high":high,"low":low,"close":close,"volume":volume},ignore_index=True)
+    is_closed = data[i]['data']['k']['x']
+    if is_closed != 'false':
+        df = df.append({"date":date,"open":sopen,"high":high,"low":low,"close":close,"volume":volume},ignore_index=True)
     
 df['date'] = df['date'].apply(lambda x:datetime.datetime.fromtimestamp(x))
 print ("Writting to file...")
