@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import time
 import sys
-
+from tqdm import tqdm
 try:
     arg1, arg2 = sys.argv[1], sys.argv[2]
 except:
@@ -22,7 +22,7 @@ iterator = data.iterrows()
 candles = 0
 data_to_write = pd.DataFrame(columns=['date', 'open', 'high', 'low', 'close', 'volume', 'obv'])
 
-for index, row in iterator:
+for index, row in tqdm(iterator,total=data.shape[0]):
     
     if index != index_next:
         
@@ -36,7 +36,7 @@ for index, row in iterator:
         elif close_init < close_value:
             obv = obv_init + volume_value
     
-        print ("Candle Date:", index, "OBV:",obv, "Close_init:", close_init, "Close:", close_value, "Volume:", volume_value)
+#        print ("Candle Date:", index, "OBV:",obv, "Close_init:", close_init, "Close:", close_value, "Volume:", volume_value)
         obv_init = obv
         candles = candles + 1
         data_to_write = data_to_write.append({"date":index,"open":close_init,"high":high_value,"low":low_value,"close":close_value,"volume":volume_value,"obv":obv},ignore_index=True)
