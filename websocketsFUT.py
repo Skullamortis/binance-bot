@@ -15,7 +15,7 @@ class WebSocketClient():
 
             websockets.client.connect returns a WebSocketClientProtocol, which is used to send and receive messages
         '''
-        self.connection = await websockets.client.connect('wss://fstream.binance.com/stream?streams=btcusdt_perpetual@continuousKline_15m')
+        self.connection = await websockets.client.connect('wss://fstream.binance.com/stream?streams=btcusdt_perpetual@continuousKline_1m')
         if self.connection.open:
             print('Connection stablished. Client correcly connected.')
             # Send greeting
