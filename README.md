@@ -1,6 +1,6 @@
 ## Readme
 
- - Python 3.9.1
+ - Python 3.8.7
  - Tensorflow 2.4
  - Git 2.30
 
@@ -17,7 +17,7 @@
 
 ## Guia para instalação das bibliotecas no Windows
 
- - Para rodar o python pelo CMD ou preferivelmente, pelo PowerShell, é necessário marcar na tela inicial de instalação "Add Python 3.9 to PATH"
+ - Para rodar o python pelo CMD ou preferivelmente, pelo PowerShell, é necessário marcar na tela inicial de instalação "Add Python 3.8 to PATH"
  - Bibliotecas: **pip install pandas numpy websocketclient matplotlib mplfinance tqdm**
  - **Ferramentas recomendadas:**
  	- Editores: SublimeText, Pycharm
