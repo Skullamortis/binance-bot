@@ -18,7 +18,7 @@
 ## Guia para instalação das bibliotecas no Windows
 
  - Para rodar o python pelo CMD ou preferivelmente, pelo PowerShell, é necessário marcar na tela inicial de instalação "Add Python 3.8 to PATH"
- - Bibliotecas: **pip install pandas numpy websocketclient matplotlib mplfinance tqdm**
+ - Bibliotecas: **pip install pandas numpy websocketclient matplotlib mplfinance tqdm colored ta mplfinance tensorboardX**
  - **Ferramentas recomendadas:**
  	- Editores: SublimeText, Pycharm
 	- Powershell
